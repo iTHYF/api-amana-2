@@ -38,7 +38,7 @@ app.get('/pagina', (req, res) => {
   res.json(pagina);
 });
 
-app.get('/pagina/:id', (req, res) => {
+app.get('/pagina/:id/historia', (req, res) => {
     let id = req.params.id;
     let prod = pagina.filter(p => p.id == id)[0];
     res.json(prod);    
